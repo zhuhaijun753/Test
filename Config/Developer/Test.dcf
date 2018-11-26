@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <DCF ARSCHEMA="430_DEV">
 	<Version>1.0</Version>
 	<PROFILESETTINGS>ProfileSettings.xml</PROFILESETTINGS>
 	<ADMINDATATEMPLATES>AdminDataTemplates.xml</ADMINDATATEMPLATES>
-	<PROJECTASSISTANT>../../Test.dpa</PROJECTASSISTANT>
+	<PROJECTASSISTANT>..\..\Test.dpa</PROJECTASSISTANT>
 	<FILEREF>
 		<ARXML>Packages.arxml</ARXML>
 	</FILEREF>
@@ -14,6 +14,6 @@
 		<ARXML>PortInterfaces.arxml</ARXML>
 	</FILEREF>
 	<FILEREF>
-		<ARXML>ECUProjects/Test.arxml</ARXML>
+		<ARXML>ECUProjects\Test.arxml</ARXML>
 	</FILEREF>
 </DCF>

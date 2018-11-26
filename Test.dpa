@@ -45,9 +45,23 @@
     </Input>
     <References>
         <DVWorkspace>.\Config\Developer\Test.dcf</DVWorkspace>
+        <EcucFileReferences/>
+        <DiagECUC>Config\System\DiagnosticsDescriptionData.arxml</DiagECUC>
     </References>
+    <Display>
+        <FileSet Id="" CS="c695a9e5">
+            <Diagnostic>
+                <Description Hash="e0ae908913d93caf691f8c3440b9d7bb">C:\Users\bosu.ARCCORE\Desktop\Vector_WS\Input\ForTraining.cdd</Description>
+                <Ecu>New_ECU_1</Ecu>
+                <Variant>CommonDiagnostics</Variant>
+                <UsePatchFile>false</UsePatchFile>
+                <UseLegacySignalImport>false</UseLegacySignalImport>
+            </Diagnostic>
+        </FileSet>
+    </Display>
     <ECUC>
-        <Active RootPackageName="/ActiveEcuC/ActiveEcuC">.\Config\ECUC\Test.ecuc.arxml</Active>
+        <Active RootPackageName="/ActiveEcuC/ActiveEcuC">Config\ECUC\Test.ecuc.arxml</Active>
+        <Derived RootPackageName="/InitialEcuC/InitialEcuC">Config\ECUC\Test.ecuc.Initial.arxml</Derived>
     </ECUC>
     <PostBuildLoadable RTEDataFreezeChecksum="" CurrentConfigurationPhase="PRE_COMPILE"/>
     <DEVSettings>
@@ -340,6 +354,17 @@
                 </Settings>
                 <Settings Name="|MICROSAR|Xcp">
                     <Setting Value="4.0.0" Name="BswImplSwVersion"/>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.persistency.internal.folder">
+                <Settings Name="TargetFolderManager"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.workflow.project.model">
+                <Settings Name="DiagnosticsDataModifier">
+                    <Setting Value="5.16.27" Name="Version"/>
+                </Settings>
+                <Settings Name="LegacyConverter">
+                    <Setting Value="1.8.17" Name="Version"/>
                 </Settings>
             </Settings>
         </Misc>
